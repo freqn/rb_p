@@ -1,4 +1,4 @@
-class Document 
+class Document # A simple class for demo purposes
 	attr_accessor :title, :author, :content
 
 	def initialize(title, author, content)
