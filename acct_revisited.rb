@@ -1,3 +1,5 @@
+require 'pry'
+
 class Account
   attr_reader :name, :balance
   
@@ -14,6 +16,8 @@ class Account
     end
   end
   
+binding.pry
+
   def withdraw(pin_number, amount)
     if pin_number == pin
       @balance -= amount
