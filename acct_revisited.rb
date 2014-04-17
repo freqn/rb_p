@@ -50,7 +50,7 @@ end
 
 puts "Enter you account ID:"
 x = gets.chomp
-puts"Enter a transaction type (excluding the quotes):"
+puts"Specify a transaction type (excluding the quotes):"
 puts "1) 'deposit' for deposit\n2) 'withdraw' for a withdrawal\n3) 'balance' for your balance."
 checking_account = Account.new(x, 564386.63)
 account_name = checking_account.name
