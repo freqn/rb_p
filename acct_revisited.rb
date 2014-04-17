@@ -1,7 +1,8 @@
 require 'pry'
 
 class Account
-  attr_reader :name, :balance
+  attr_accessor :name
+  attr_reader :balance
   
   def initialize(name, balance=0)
     @name = name
@@ -51,5 +52,8 @@ puts "Enter you account ID:"
 x = gets.chomp
 puts"Enter a transaction type (excluding the quotes):"
 puts "1) 'deposit' for deposit\n2) 'withdraw' for a withdrawal\n3) 'balance' for your balance."
-#checking_account = Account.new("My account", 564386.63)
-#checking_account.deposit(1234, 672.50)
+checking_account = Account.new(x, 564386.63)
+account_name = checking_account.name
+account_balance = checking_account.balance 
+puts "#{account_name}'s balance is now #{account_balance}."
+# checking_account.deposit(1234, 672.50)
