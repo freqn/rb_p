@@ -1,4 +1,16 @@
-.
+F
 
-Finished in 0.00539 seconds
-1 example, 0 failures
+Failures:
+
+  1) Bacon is edible
+     Failure/Error: expect(Bacon.edible?).to be_true
+     NoMethodError:
+       undefined method `edible?' for Bacon:Class
+     # ./spec/bacon_spec.rb:5:in `block (2 levels) in <top (required)>'
+
+Finished in 0.00053 seconds
+1 example, 1 failure
+
+Failed examples:
+
+rspec ./spec/bacon_spec.rb:4 # Bacon is edible

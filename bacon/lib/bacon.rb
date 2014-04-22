@@ -1,5 +1,5 @@
 class Bacon
-  def self.edible?
+  def edible?
     true
   end  
 end
